@@ -1,0 +1,14 @@
+h1 Basic Slider with jQuery
+#sliderNav
+  a.next &rsaquo;
+  a.prev &lsaquo;
+  #slider
+    ul
+      mixin loopSlides(...slides)
+        each slide in slides
+          li Slide #{slide}
+      +loopSlides(1, 2, 3, 4, 5)
+
+  .slider_option
+    input#checkbox(type="checkbox")
+    label(for="checkbox") Autoplay
